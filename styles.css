@@ -34,16 +34,20 @@ body {
 }
 
 .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   background-color: var(--dark-red);
   padding: 0.6rem;
 }
 
 .headerLogo {
+    height: 5.4rem;
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: fit-content;
-  height: fit-content;
+    margin-left: 1.6rem;
 }
 
 #logo {
@@ -53,33 +57,75 @@ body {
 
 #title {
   font-size: 3.4rem;
+    font-weight: 600;
   color: var(--light-bg);
 }
 
 .container {
   width: 100%;
-  height: 80%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  gap: 4%;
-  padding: 4%;
+  gap: 2%;
+  padding: 2%;
 }
 
-.textToAscii {
+#textToAscii {
   background-color: var(--light-bg);
   flex: 1;
   border-radius: 2.4rem;
 }
 
-.imageToAscii {
+#imageToAscii {
   background-color: var(--light-bg);
   flex: 1;
   border-radius: 2.4rem;
 }
 
-.footer {
-    width: 100%;
-    flex: 1;
-   background-color: var(--black); 
+.links {
+    display: flex;
+    flex-direction: row;
+    gap: 1.6rem;
+    margin: 0 4.8rem;
+    max-width: 20%
+}
+
+.link {
+    width: 15rem;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0.8rem;
+    border-radius: 2.4rem;
+    background-color: var(--dark-red);
+    text-decoration: none;
+    transition: 0.2s;
+    text-shadow: 0.2rem 0.2rem 0 var(--dark-red);
+    border: 0.2rem solid var(--dark-red);
+    box-shadow: 0 0.2rem 0 var(--dark-red);
+  color: var(--light-bg);
+    white-space: no-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.link:hover {
+    background-color: var(--red);
+    text-shadow: 0.2rem 0.2rem 0 var(--black);
+    border: 0.2rem solid var(--black);
+    box-shadow: 0 0.2rem 0 var(--black);
+}
+
+.link:active {
+    transform: translateY(0.2rem);
+    box-shadow: 0 0rem 0 var(--black);
+}
+
+.disableBtn {
+    pointer-events: none;
+    cursor: default;
+    text-shadow: 0.2rem 0.2rem 0 var(--black);
+    background-color: var(--gray);
+    border: 0.2rem solid var(--black);
+    box-shadow: 0 0.2rem 0 var(--black);
 }
