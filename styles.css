@@ -72,15 +72,22 @@ body {
 }
 
 #textToAscii {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    max-width: 50%;
   background-color: var(--light-bg);
   flex: 1;
   border-radius: 2.4rem;
+    padding: 2rem;
 }
 
 #imageToAscii {
+    max-width: 50%;
   background-color: var(--light-bg);
   flex: 1;
   border-radius: 2.4rem;
+    padding: 1rem;
 }
 
 .links {
@@ -128,4 +135,69 @@ body {
     background-color: var(--gray);
     border: 0.2rem solid var(--black);
     box-shadow: 0 0.2rem 0 var(--black);
+}
+
+.toolTitle {
+    text-align: center;
+    font-size: 4rem;
+}
+
+#inputContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0.4;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+}
+
+h3 {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 300;
+}
+
+#liveInput {
+    margin: 2rem;
+    border-radius: 1.2rem;
+    border: 0.2rem solid var(--dark-red);
+    font-size: 1.6rem;
+    padding: 0.8rem;
+    resize: none;
+}
+
+#liveInput:focus {
+    outline: solid var(--red);
+}
+
+#outputContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0.6;
+}
+
+#outputTextContainer {
+    flex: 1;
+    width: 100%;
+    border-radius: 1.2rem;
+    border: 0.2rem solid var(--dark-red);
+    background-color: var(--white);
+    padding: 0.8rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#outputText {
+    font-size: 1.6rem;
+    white-space: no-wrap;
 }

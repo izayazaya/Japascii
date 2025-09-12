@@ -56,13 +56,15 @@ document.addEventListener("DOMContentLoaded", () => {
             <h2 class="toolTitle">Text to ASCII Art Generator</h2>
             <div id="inputContainer">
                 <form>
-                    <label for="liveInput" id="inputOutputTitle">Input text</label>
-                    <input type="text" id="liveInput" placeholder="Type your message here...">
+                    <h3>Input text</h3>
+                    <textarea type="text" id="liveInput" rows="5" cols="30" placeholder="Type your message here..."></textarea>
                     </form>
                 </div>
             <div id="outputContainer">
                 <h3>Output</h3>
+                <div id="outputTextContainer">
                 <p id="outputText">Output will appear here...</p>
+                    </div>
                 </div>
         `;
         imageToAscii.innerHTML = `
