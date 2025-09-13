@@ -63,9 +63,9 @@ document.addEventListener("DOMContentLoaded", () => {
             <div id="outputContainer">
                 <h3>Output</h3>
                 <div id="outputTextContainer">
-                <p id="outputText">Output will appear here...</p>
-                    </div>
+                    <p id="outputText">Output will appear here...</p>
                 </div>
+            </div>
         `;
         imageToAscii.innerHTML = `
             <h2 class="toolTitle">Image to ASCII Art Generator</h2>
