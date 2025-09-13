@@ -1,5 +1,5 @@
 {
-    "name": "japasciiWorker",
+    "name": "japascii-worker",
     "compatibility_date": "2025-09-13",
     "main": "src/index.html"
 }
