@@ -1,4 +1,4 @@
-name = "japascii-webapp"
+name = "japascii"
 compatibility_date = "2025-09-13"
 main = "src/index.js"
 
